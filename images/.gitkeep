@@ -1,0 +1,18 @@
+# 图片资源目录
+
+此目录用于存放网站使用的图片资源
+
+## 目录结构
+
+- `android/` - 安卓版相关图片（截图、功能展示等）
+- `windows/` - Windows版相关图片（截图、功能展示等）
+- `common/` - 通用图片（Logo、图标等）
+
+## 使用方式
+
+在 Markdown 文件中引用图片：
+
+```markdown
+![图片描述](/images/android/screenshot.png)
+```
+
