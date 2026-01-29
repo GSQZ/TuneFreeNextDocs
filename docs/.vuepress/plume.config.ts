@@ -40,7 +40,7 @@ export default defineThemeConfig({
   /* 站点页脚 */
   footer: {
     message: '音遇自由，音乐无界',
-    copyright: 'Copyright © 2021-2025 TuneFreeNext',
+    copyright: 'Copyright © 2021-2026 TuneFreeNext',
   },
 
   /**

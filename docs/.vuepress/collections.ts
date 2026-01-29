@@ -24,66 +24,25 @@
  *
  * 通过 `defineCollection` 定义的 collection 配置，应该填入 `defineCollections` 中
  */
-import { defineCollection, defineCollections } from 'vuepress-theme-plume'
+import { defineCollection } from 'vuepress-theme-plume'
 
-const demoDoc = defineCollection({
-  // doc 类型，该类型带有侧边栏
-  type: 'doc',
-  // 文档集合所在目录，相对于 `docs`
-  dir: 'demo',
-  // `dir` 所指向的目录中的所有 markdown 文件，其 permalink 需要以 `linkPrefix` 配置作为前缀
-  // 如果 前缀不一致，则无法生成侧边栏。
-  // 所以请确保  markdown 文件的 permalink 都以 `linkPrefix` 开头
-  linkPrefix: '/demo',
-  // 文档标题，它将用于在页面的面包屑导航中显示
-  title: 'Demo',
-  // 手动配置侧边栏结构
-  sidebar: ['', 'foo', 'bar'],
-  // 根据文件结构自动生成侧边栏
-  // sidebar: 'auto',
-})
-
-// 统一的文档集合
+// 使用指南文档集合
 const guideDoc = defineCollection({
   type: 'doc',
   dir: 'guide',
   linkPrefix: '/guide/',
   title: '使用指南',
   sidebar: [
-    {
-      text: '开始使用',
-      icon: 'material-symbols:rocket-launch',
-      collapsed: false,
-      items: [
-        { text: '立即开始', link: 'start', icon: 'material-symbols:play-circle' },
-      ],
-    },
-    {
-      text: 'Android 版',
-      icon: 'mdi:cellphone',
-      collapsed: false,
-      items: [
-        { text: '快速开始', link: 'android/', icon: 'material-symbols:rocket' },
-        { text: '常见问题', link: 'android/faq', icon: 'material-symbols:help' },
-      ],
-    },
-    {
-      text: 'Windows 版',
-      icon: 'mdi:microsoft-windows',
-      collapsed: false,
-      items: [
-        { text: '快速开始', link: 'windows/', icon: 'material-symbols:rocket' },
-        { text: '常见问题', link: 'windows/faq', icon: 'material-symbols:help' },
-      ],
-    },
+    { text: '立即开始', link: 'start', icon: 'material-symbols:rocket-launch' },
+    { text: '下载安装', link: 'download', icon: 'material-symbols:download' },
+    { text: '功能介绍', link: 'features', icon: 'material-symbols:star' },
+    { text: '常见问题', link: 'faq', icon: 'material-symbols:help' },
   ],
 })
 
 /**
  * 导出所有的 collections
- * (demoDoc 为参考示例，如果不需要它，请删除)
  */
 export default defineCollection([
-  demoDoc,
   guideDoc,
 ])
