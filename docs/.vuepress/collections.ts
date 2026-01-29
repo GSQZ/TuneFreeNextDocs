@@ -36,6 +36,7 @@ const guideDoc = defineCollection({
     { text: '立即开始', link: 'start', icon: 'material-symbols:rocket-launch' },
     { text: '下载安装', link: 'download', icon: 'material-symbols:download' },
     { text: '功能介绍', link: 'features', icon: 'material-symbols:star' },
+    { text: '数据迁移', link: 'migrate', icon: 'material-symbols:sync-alt' },
     { text: '常见问题', link: 'faq', icon: 'material-symbols:help' },
   ],
 })
