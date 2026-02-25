@@ -39,8 +39,8 @@ export default defineThemeConfig({
 
   /* 站点页脚 */
   footer: {
-    message: '音遇自由，音乐无界',
-    copyright: 'Copyright © 2021-2026 TuneFreeNext',
+    message: '尊重版权，支持正版',
+    copyright: 'Copyright © 2021-2026 TuneFreeNext | 本站已停止运营',
   },
 
   /**
@@ -49,7 +49,7 @@ export default defineThemeConfig({
   profile: {
     avatar: '/images/common/logo.png',
     name: 'TuneFreeNext',
-    description: '音遇自由，音乐无界',
+    description: '本站已停止运营',
     // circle: true,
     // location: '',
     // organization: '',
